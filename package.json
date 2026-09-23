@@ -1,0 +1,28 @@
+{
+  "name": "google-mcp",
+  "version": "1.0.0",
+  "description": "Standalone Google / Gmail MCP server for all projects",
+  "main": "dist/index.js",
+  "bin": {
+    "google-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "auth": "tsx src/auth-cli.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
